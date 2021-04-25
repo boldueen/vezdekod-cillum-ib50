@@ -1,0 +1,31 @@
+﻿<Window x:Class="secret_message.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:secret_message"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="580" Width="800">
+    <Grid>
+        <Grid>
+            <Label Content="enter your secret text" Margin="10,0,461,381" Width="321" FontSize="15"></Label>
+            <TextBox x:Name="textBoxMessage" Text="HERE" FontSize="25" Margin="10,43,313,199" TextChanged="textBoxMessage_TextChanged" GotFocus="textBoxMessage_GotFocus" />
+        </Grid>
+        <Grid>
+            <Label Content="enter topic of the message" Margin="527,0,-56,381" Width="321" FontSize="15"></Label>
+            <TextBox x:Name="textBoxTopic" Text="TOPIC" FontSize="25" Margin="527,43,10,446" GotFocus="textBoxTopic_GotFocus" />
+        </Grid>
+
+        <Grid>
+            <Label Content="recipient's email address" Margin="530,144,10,240" FontSize="15"></Label>
+            <TextBox x:Name="textBoxEmailReceive" Text="E-MAIL" Margin="530,184,10,302" GotFocus="textBoxEmailReceive_GotFocus"></TextBox>
+        </Grid>
+
+        <Grid>
+            <Button x:Name="buttonSend" FontSize="50" Content="SEND" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="634,0,10,191" Height="82" Width="148" Click="buttonSend_Click"></Button>
+        </Grid>
+
+        <Button x:Name="buttonDeSecretMes" FontSize="50" Content="DeSecret" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10,0,463,61" Height="82" Width="319" Click="buttonDeSecretMes_Click"></Button>
+
+    </Grid>
+</Window>
